@@ -1,0 +1,12 @@
+.filter{
+  display: flex;
+  gap: 8px;
+  margin: 12px 0px;
+}
+
+button.active{
+  font-weight: bold;
+  background: #1976d2;
+  color: white;
+  border: none;
+}

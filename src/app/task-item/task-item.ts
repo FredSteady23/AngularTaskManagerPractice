@@ -1,0 +1,17 @@
+import { Component, input, output } from '@angular/core';
+import { Task } from '../task.model';
+
+@Component({
+  selector: 'app-task-item',
+  imports: [],
+  templateUrl: './task-item.html',
+  styleUrl: './task-item.css',
+})
+export class TaskItem {
+  task = input.required<Task>();
+  toggled = output<Task>();
+
+  onToggle(){
+    this.toggled.emit(this.task());
+  }
+}

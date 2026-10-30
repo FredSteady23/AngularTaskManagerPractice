@@ -1,0 +1,5 @@
+<ul>
+  @for(t of tasks(); track t.id){
+    <app-task-item [task]="t" (toggled)="toggled.emit($event)" />
+  }
+</ul>

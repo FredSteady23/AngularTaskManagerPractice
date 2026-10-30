@@ -1,0 +1,5 @@
+<li [class.done]="task().done">
+  @if(task().done){ ✓ } @else { ○ }
+  {{ task().title }} ({{ task().priority }})
+  <button (click)="onToggle()">Переключить</button>
+</li>
